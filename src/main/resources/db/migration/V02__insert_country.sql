@@ -1,0 +1,1 @@
+INSERT INTO "country" (id, name, name_pt, initials, bacen) VALUES (1, 'Brazil', 'Brasil', 'BR', 1058);

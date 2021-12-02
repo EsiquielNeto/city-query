@@ -1,0 +1,17 @@
+# Spring Boot configuration
+spring:
+  profiles:
+    active: dev
+  datasource:
+    database: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/city_query
+    username: postgres
+    password: "ps,006"
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false

@@ -14,7 +14,7 @@ import java.util.List;
 @Getter
 @Setter
 @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
-public class District {
+public class State {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

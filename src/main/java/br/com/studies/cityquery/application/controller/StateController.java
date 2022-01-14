@@ -1,7 +1,7 @@
 package br.com.studies.cityquery.application.controller;
 
-import br.com.studies.cityquery.domain.model.District;
-import br.com.studies.cityquery.infrastructure.repository.Districtrepository;
+import br.com.studies.cityquery.domain.model.State;
+import br.com.studies.cityquery.infrastructure.repository.StateRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/districties")
 @RequiredArgsConstructor
-public class DistrictController {
+public class StateController {
 
-    private final Districtrepository districtrepository;
+    private final StateRepository stateRepository;
 
     @GetMapping
-    public Page<District> listAllContries(Pageable pageable) {
-        return districtrepository.findAll(pageable);
+    public Page<State> listAllContries(Pageable pageable) {
+        return stateRepository.findAll(pageable);
     }
 }

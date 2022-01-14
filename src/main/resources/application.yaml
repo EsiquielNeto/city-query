@@ -3,9 +3,8 @@ spring:
   profiles:
     active: dev
   datasource:
-    database: postgres
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/city_query
+    url: jdbc:postgresql://localhost:5432/cities
     username: postgres
     password: "ps,006"
   jpa:

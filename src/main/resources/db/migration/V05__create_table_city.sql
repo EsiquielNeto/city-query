@@ -8,14 +8,11 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 CREATE TABLE city (
-    id        bigint NOT NULL,
-    name      character varying(120),
-    uf        integer,
-    ibge      integer,
-    lat_lon   point,
-    latitude  double precision,
-    longitude double precision,
-    cod_tom   smallint DEFAULT 0
+    id bigint NOT NULL,
+    name character varying(120) DEFAULT NULL::character varying,
+    uf integer,
+    ibge integer,
+    lat_lon point
 );
 
 ALTER TABLE city OWNER TO postgres;
